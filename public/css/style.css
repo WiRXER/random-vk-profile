@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Play&display=swap');
+
+body {
+    margin: 0;
+    background-color: #141414;
+
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    
+}
+
+
+.profile-container {
+    display: flex;
+    border: 2px solid #373737;
+}
+
+.fate-header {
+    font-family: 'Play';
+    text-align: center;
+    letter-spacing: 0.8rem;
+    color: #E1E3E6;
+}
+
+.avatar {
+    flex: 1;
+    /* padding: 1.1rem; */
+    margin: 1.2rem;
+}
+
+.info {
+    flex: 1;
+    /* padding: 1rem; */
+    margin: 1.2rem;
+}
+
+#name {
+    margin: auto;
+    font-family: 'Play';
+    font-size: 1em;
+    color: #E1E3E6;
+}
+
+#profile-id {
+    font-family: 'Play';
+    color: #434343;
+    font-size: 0.7em
+}

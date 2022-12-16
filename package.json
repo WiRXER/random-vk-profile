@@ -1,0 +1,17 @@
+{
+  "name": "vk-random-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "WiRXER",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
