@@ -1,7 +1,10 @@
-const express = require('express');
+import express from 'express';
+import fetch from 'node-fetch';
 
-require('dotenv').config();
+import * as dotenv from 'dotenv';
+dotenv.config();
 
+const __dirname = process.cwd();
 const app = express();
 const port = process.env.SERVER_PORT || 3000;
 
@@ -37,8 +40,7 @@ app.get('/', async (req, res) => {
     const profileInfo = await getProfileInfo(serviceKey, getRandomId(1, 900000000));
 
     if (!profileInfo.deactivated || profileInfo.first_name !== 'DELETED'){
-      console.log(profileInfo);
-
+      
       res.render('index', {
         name: profileInfo.first_name,
         lastName: profileInfo.last_name,
